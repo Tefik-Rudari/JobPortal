@@ -1,0 +1,80 @@
+/* Header */
+
+.body {
+    height: 400px;
+    width: 100%;
+    background-image: url("../../assets/images/bb.jpg");
+    display: grid;
+    align-content: flex-end;
+}
+
+.body div h1 {
+    margin: 5%;
+}
+
+.body div .links a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    tab-size: initial;
+}
+
+.body div .links a:hover {
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ----------------*/
+
+.ftcoSection {
+    padding: 6em 0;
+    position: relative;
+    background: #f8f9fa !important;
+}
+
+.ftcoSection .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ftcoSection .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+
+
+

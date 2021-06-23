@@ -1,0 +1,78 @@
+.NavigationItems{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: left;
+    height: 100%;
+}
+
+.NavigationItems a :hover,
+.NavigationItems :hover{
+    background-color: transparent;
+}
+
+@media (max-width: 999px) {
+    .NavigationItems {
+        flex-flow: column;
+        width: 100%;
+    }
+}
+
+.PostJob{
+    color: #fff;
+    border: 1px solid #206dfb;
+    padding-top: 9%;
+    padding-bottom: 9%;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #206dfb;
+    border-radius: 5px;
+    font-weight: 400;
+    opacity: 1 !important;
+}
+
+.WantJob {
+    color: #fff;
+    border: 1px solid #ffc107;
+    padding-top: 9%;
+    padding-bottom: 9%;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #ffc107;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 999px){
+    .PostJob{
+        color: #fff;
+        border: 1px solid #206dfb;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: #206dfb;
+        border-radius: 5px;
+        font-weight: 400;
+        opacity: 1 !important;
+    }
+    
+    .WantJob {
+        color: #fff;
+        border: 1px solid #ffc107;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: -15px;
+        background: #ffc107;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,78 @@
+/* Header */
+
+.body {
+    height: 400px;
+    width: 100%;
+    background-image: url("../../assets/images/bb.jpg");
+    display: grid;
+    align-content: flex-end;
+}
+
+.body div h1 {
+    margin: 5%;
+}
+
+.body div .links a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    tab-size: initial;
+}
+
+.body div .links a:hover {
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/*---------------*/
+
+.jobs {
+    padding: 6em 0;
+    background-color: #f8f9fa;
+    /* margin: 0 5%; */
+    display: flex;
+}
+
+.jobs .publication {
+    display: grid;
+    width: 70%;
+    height: fit-content;
+}
+
+/* .jobs .sort {
+    background-color: white;
+} */
+
+.jobs .sort .sortCategory {
+    font-weight: 100;
+    margin-top: 15px;
+    background-color: white;
+    text-align: left;
+    padding: 25px 20px;
+}
+
+.jobs .sort .sortCategory h3 {
+    font-size: 19px;
+}
+
+.jobs .sort .sortCategory .checkbox {
+    font-size: 13px;
+    /* width: 100%; */
+}
+
+.jobs .sort .sortCategory .Danger1 {
+    text-align: center;
+}
+
+@media(max-width: 820px) {
+    .jobs {
+        display: grid;
+        /* width: auto; */
+    }
+    .jobs .publication {
+        width: auto;
+    }
+    .jobs .sortt {
+        padding: 10%;
+    }
+}

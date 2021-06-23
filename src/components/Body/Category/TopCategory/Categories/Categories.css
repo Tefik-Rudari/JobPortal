@@ -1,0 +1,72 @@
+.Categories {
+    display: block;
+    color: #1a1a1a;
+    border-bottom: 1px solid #ffefdb;
+    position: relative;
+    list-style: none;
+    margin-bottom: 0px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.active {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+}
+
+.Ca {
+    width: 100%;
+    height: 100%;
+    padding: 16px 15px 16px 0;
+}
+
+.Categories :hover, .Ca :hover, .active :hover {
+    background: #ffefdb;
+    color: blue;
+    outline: none !important;
+}
+
+.Categories span:hover{
+    color:  rgba(0, 0, 0, 0.3);;
+}
+
+.Categories a {
+    display: block;
+    color: #1a1a1a;
+    position: relative;
+}
+
+.Number {
+    font-size: 16px;
+    background: #fffaf5;
+    color: #fdab44;
+    padding: 2px 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.Position {
+    color: rgba(0, 0, 0, 0.3);
+    padding: 2px 5px;
+    font-size: 15px;
+}
+
+.Ca:after {
+    content: '☞';
+    /* content: '〉'; */
+    place-content: center;
+    position: absolute;
+    opacity: 0;
+    top: 25px;
+    right: 50px;
+    color: #FDAB43;
+    transition: all 0.3s ease;
+}
+
+.Ca:hover:after {
+    opacity: 1;
+    right: 20px;
+}

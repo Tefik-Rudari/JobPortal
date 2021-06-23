@@ -1,0 +1,71 @@
+.Toolbar {
+    height: 56px;
+    width: 100%;
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.Toolbar nav {
+    height: 100%;
+}
+
+.ToolbarScroll {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: white;
+    display: flex;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+    transition: transform 5s ease-in;
+    z-index: 100;
+}
+
+.ToolbarScroll nav {
+    height: 100%;
+}
+
+.Toolbar :hover,
+.ToolbarScroll :hover{
+    background-color: none;
+}
+
+.Logo {
+    height: 80%;
+    background-color: transparent;
+}
+
+.white a {
+    color: white !important;
+}
+
+.black a {
+    color: black !important;
+}
+
+/* .black a:hover,
+.black a:active{
+    color: blue;
+}
+
+.white a:hover {
+    color: #9aac01;
+} */
+
+@media (max-width: 999px){
+    .Hide{
+        display: none;
+    }
+}

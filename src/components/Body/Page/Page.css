@@ -1,0 +1,81 @@
+.col {
+    margin-left: 5vh;
+    margin-bottom: 5vh;
+}
+
+.paragraf {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+}
+
+.header {
+    font-size: 54px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.photo {
+    color: white;
+    margin-left: 10vw;
+}
+
+.colon{
+    display: flex;
+}
+
+.number {
+    font-weight: 600;
+    font-size: 34px;
+    color: #fff;
+    line-height: 1;
+}
+
+.blloku {
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    z-index: 1;
+}
+
+.statistikat {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: row;
+    align-items: left;
+}
+
+@media(max-width: 1000px) {
+    .photo {
+        color: white;
+        margin-left: 5vw;
+    }
+}
+
+@media(max-width: 750px){
+    .statistikat{
+        justify-content: center !important;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .colon{
+        display: flex;
+    }
+
+    .paragraf{
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .header {
+        font-size: 30px;
+        padding: 0;
+    }
+
+    .number{
+        font-size: 18px;
+    }
+}

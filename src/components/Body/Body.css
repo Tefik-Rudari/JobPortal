@@ -1,0 +1,43 @@
+.Body {
+    margin-top: 0vh !important;
+}
+
+.MiddleDiv {
+    position: relative;
+    z-index: 2;
+    text-align: center !important;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -630px;
+    padding-bottom: 4%;
+}
+
+@media(max-width: 999px){
+    .MiddleDiv {
+        margin-top: -700px;
+    }
+}
+
+.Search{
+    padding: 10px 30px !important;
+    margin-right: 12px;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 150px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative !important;
+    display: inline-block;
+    border: 1px solid transparent;
+    background: #fdab44;
+    margin: 0 auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px
+}
+
+.Job {
+    margin-right: 15px;
+}

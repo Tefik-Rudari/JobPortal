@@ -1,0 +1,299 @@
+.block {
+  height: 750px;
+  background-image: url("../../assets/images/bb.jpg");
+  padding-top: 20vh;
+  padding-right: 10vw;
+  padding-left: 10vw;
+  /* display: block; */
+  /* align-items: center; */
+  /* padding-left: 25%; */
+}
+
+.header1 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+
+.header11 {
+  /* padding-bottom: 25px; */
+  padding-top: 20px;
+  text-align: center;
+}
+
+.paragraf {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+.forgotPass {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.container {
+  font-family: 'Montserrat, sans-serif';
+  background: #f6f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin: -20px 0 50px; */
+  padding: 15px;
+  background: #fff;
+  /* margin-left: 25%; */
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 500px;
+}
+
+.formContainer form, .Input {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  justify-content: center;
+  text-align: left;
+}
+
+.forma {
+  margin-bottom: 10px;
+}
+
+.socialContainer a {
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.formContainer input, .Input {
+  background: #eee;
+  border: none;
+  padding: 12px 30px;
+  margin: 8px 8px;
+  width: 100%;
+}
+
+.Input {
+  margin: -5px 0 !important;
+}
+
+.button {
+  margin-top: 15px;
+  border-radius: 20px;
+  border: 1px solid #4273f8;
+  background: #4876f7;
+  color: #fff;
+  font-size: bold;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.formdiv {
+  margin-bottom: 10px;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button.ghost {
+  background: transparent;
+  border-color: #fff;
+}
+
+.formContainer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.signInContainer {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.signUpContainer {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.overlayContainer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 6;
+}
+
+.overlay {
+  background: #4273f8;
+  background: linear-gradient(to right, #6f94fa, #3263ec) no-repeat 0 0 / cover;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlayPanel {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlayRight {
+  right: 0;
+  transform: translateX(0);
+}
+
+.overlayLeft {
+  transform: translateX(-20%);
+}
+
+/* Animatino */
+
+/* Move the sign in to the roght */
+
+.container.rightPanelActive .signInContainer {
+  transform: translateX(100%);
+}
+
+/* Move overlay to the left */
+
+.container.rightPanelActive .overlayContainer {
+  transform: translateX(-100%);
+}
+
+/* Bring sing up over sign in */
+
+.container.rightPanelActive .signUpContainer {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+/* Move overlay back to the right */
+
+.container.rightPanelActive .overlay {
+  transform: translateX(50%);
+}
+
+.container.rightPanelActive .overlayLeft {
+  transform: translateX(0);
+}
+
+.container.rightPanelActive .overlayRight {
+  transform: translateX(20%);
+}
+
+@media(max-width: 650px) {
+  .block {
+    height: 1200px;
+  }
+  .container {
+    height: 1000px;
+  }
+  .formContainer, .signInContainer {
+    height: 50%;
+    width: 100%;
+  }
+  .signInContainer, .signUpContainer {
+    height: 50%;
+    width: 100%;
+  }
+  .overlayContainer {
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  .overlay {
+    /* top: -50%; */
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+  }
+  .overlayRight {
+    /* top: 25%; */
+    right: 0;
+    transform: translateY(-25%);
+  }
+  .overlayLeft {
+    /* top: 100%; */
+    right: 0;
+    transform: translateY(25%);
+  }
+  /* Animatino */
+  /* Move the sign in to the right */
+  .container.rightPanelActive .signInContainer {
+    transform: translateY(100%);
+  }
+  /* Move overlay to the left */
+  .container.rightPanelActive .overlayContainer {
+    transform: translateY(-100%);
+  }
+  /* Bring sing up over sign in */
+  .container.rightPanelActive .signUpContainer {
+    transform: translateY(100%);
+    opacity: 1;
+    z-index: 5;
+  }
+  /* Move overlay back to the right */
+  .container.rightPanelActive .overlay {
+    transform: translateY(50%);
+  }
+  .container.rightPanelActive .overlayLeft {
+    transform: translateY(-25%);
+  }
+  .container.rightPanelActive .overlayRight {
+    transform: translateY(50%);
+  }
+}
+
+@media(min-Width: 1200px) {
+  .block {
+    padding-right: 10%;
+    padding-left: 25%;
+  }
+}

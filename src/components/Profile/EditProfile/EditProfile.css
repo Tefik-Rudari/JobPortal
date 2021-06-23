@@ -1,0 +1,56 @@
+.container {
+   background: url(../../../assets/images/bb.jpg);
+   padding: 200px 7% 140px 7%;
+}
+.container .box{
+   display: flex;
+   border-radius: 10px;
+   background-color: #ecf3ff;
+}
+
+.container .box .profileContent {
+   width: 100%;
+}
+
+.container .header {
+   background-color: var(--light);
+   padding: 10px 0;
+   border-radius: 10px 10px 0 0;
+   text-align: center;
+   border-bottom: 1px solid var(--line);
+}
+
+.container .box .profileContent .header {
+   display: flex;
+   justify-content: flex-end;
+   padding: 4px 30px;
+}
+
+.container .box .profileContent .header .name{
+   margin-right: 20px;
+   text-align: right;
+   padding-top: 2px;
+}
+.container .box .profileContent .header .name h4{
+   font-size: 13px;
+   font-weight: 500;
+   margin: 0;
+}
+.container .box .profileContent .header .name span{
+   font-size: 12px;
+   color: var(--primary);
+   font-weight: 600;
+}
+
+.container .box .profileContent .header .image img{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+
+.profileContent .user {
+   margin: 30px 5%;
+}
+.profileContent .user .newww{
+   margin: 50px 0 20px 0;
+}

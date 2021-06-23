@@ -1,0 +1,17 @@
+.photo img {
+    width: 200px !important;
+    height: 180px !important;
+    border-radius: 50%;
+}
+.photo {
+    display: block;
+}
+.candidate {
+    padding-left: 10%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.candidate .team{
+    padding: 3%;
+}

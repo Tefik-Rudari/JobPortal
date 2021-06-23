@@ -1,0 +1,135 @@
+.container {
+   padding: 30px;
+}
+
+.container .userProfileText{
+   display: flex;
+   margin-bottom: 30px;
+}
+
+.container .userProfileText h1{
+   width: 300px;
+   font-weight: 100;
+   margin-right: 10px;
+}
+
+hr {
+   width: 100%;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid var(--line);
+   margin: 1.7em 0 1em 0;
+   padding: 0;
+}
+ 
+.container .profile {
+   display: flex;
+   background-color: white;
+   border-radius: 5px;
+   box-shadow: 0px 0px 31px -12px var(--shadow);
+}
+
+.container .profile .main {
+   text-align: center;
+   width: 250px;
+   padding: 20px 4% 60px 4%;
+   border-right: 1px solid var(--line);
+}
+
+.container .profile .main .leftSide img{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+}
+.container .profile .main .leftSide span{
+   font-size: 13px;
+   font-weight: 100;
+   color: var(--primary);
+}
+
+
+.container .profile .main h3{
+   margin-top: 15px;
+   font-size: 15px;
+   font-weight: 560;
+}
+
+/* SECTIONS  */
+.container .sections {
+   width: 100%;
+}
+
+.container .sections .boxes {
+   border-bottom: 1px solid var(--line);
+   padding: 20px 10px 20px 6.5%;
+}
+
+.container .sections .boxes h4{
+   color: var(--lighter);
+   font-size: 14px;
+   width: 100%;
+   font-weight: 100;
+}
+
+.container .sections .boxes .box{
+   margin: 10px 0;
+   width: 100%;
+   display: flex;
+}
+
+.container .sections .boxes .box .desc{
+   padding-right: 5%;
+   display: flex;
+   width: 100%;
+}
+
+.container .sections .boxes .box .desc p{
+   font-size: 13px;
+   color: var(--shadow);
+   margin-right: 10px;
+   padding: 0;
+}
+
+.container .sections .boxes .box .desc span{
+   font-size: 13px;
+   color: var(--blue);
+   /* width: 100%; */
+}
+
+@media(max-width: 800px){
+   .container .profile {
+      display: grid;
+   }
+
+   .container .profile .main {
+      text-align: center;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid var(--line);
+      padding: 20px 0 60px 0;
+   }
+   
+   .container .sections .boxes h4{
+      text-align: center;
+      margin-bottom: 30px;
+   }
+}
+@media(max-width: 600px){
+   .container .sections .boxes h4{
+      text-align: left;
+   }
+
+   .container .sections .boxes .box{
+      padding: 0;
+      text-align: center;
+      display: grid;
+      width: 100%;
+      margin: 10px 0;
+   }
+
+   .container .sections .boxes .box .desc{
+      padding: 10px 0;
+      display: flex;
+      width: 100%;
+   }
+}

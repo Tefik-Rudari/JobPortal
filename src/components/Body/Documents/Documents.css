@@ -1,0 +1,37 @@
+.container {
+    background: linear-gradient(to right, #207dff 0%, #a16ae8 100%);
+    padding: 96px 10%;
+}
+
+.container .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.container .boxes .box {
+    padding: 0 15px;
+}
+
+.container .boxes img{
+    margin-bottom: 10px;
+}
+
+.container .boxes h2{
+    color: var(--light);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 23px;    
+}
+
+.container .boxes p{
+    padding-left: 0;
+    font-size: 17px;
+    color: rgb(233, 231, 231);
+    line-height: 1.6rem;
+}
+
+@media(max-width: 800px){
+    .container .boxes {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}

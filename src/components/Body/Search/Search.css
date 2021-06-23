@@ -1,0 +1,91 @@
+.link {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+}
+
+@media(max-width: 999px) {
+    .link {
+        margin-left: auto;
+        justify-content: center;
+    }
+}
+
+.FindJobb {
+    border: 2px;
+    margin-left: 10%;
+    display: flex;
+}
+
+.Searche {
+    padding: 10px 30px !important;
+    margin-right: 10px;
+    border-radius: 0;
+    width: 140px;
+    font-size: 18px;
+    position: relative !important;
+    border: 1px solid transparent;
+    color: white;
+    background: #fdab44;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -ms-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -ms-border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-decoration: none;
+    box-sizing: unset;
+    cursor: pointer;
+}
+
+.Searche:active, .Search:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;    
+}
+
+.activee {
+    padding: 10px 30px !important;
+    margin-right: 10px;
+    border-radius: 0;
+    width: 140px;
+    font-size: 18px;
+    position: relative !important;
+    border: 1px solid transparent;
+    color: black;
+    background: white;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -ms-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -ms-border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-decoration: none;    
+    box-sizing: unset;
+    cursor: pointer;
+}
+
+@media(max-width: 700px) {
+    .link {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Searche, .activee {
+        margin-bottom: 2%;
+        border-radius: 5px;
+        box-sizing: unset;
+        width: 100% !important;
+    }
+}

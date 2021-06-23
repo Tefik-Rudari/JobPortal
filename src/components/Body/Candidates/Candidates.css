@@ -1,0 +1,85 @@
+* {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: var(--blue);
+    margin: auto;
+    padding: 100px 20px;
+}
+
+/* heading */
+.container .heading{
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
+
+.container .heading span{
+    color: rgb(240, 238, 238);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.container .heading h1{
+    font-weight: 100;
+    color: var(--light);
+    margin-top: 15px;
+}
+
+/* Boxes */
+
+.container .boxes {
+    display: flex;
+    justify-content: center;
+}
+
+.container .boxes .box {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.container .boxes .box .images img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.container .boxes .box .images img:hover{
+    cursor: pointer;
+}
+
+.container .boxes .box .description h2{
+    color: var(--light);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.container .boxes .box .description h2:hover{
+    cursor: pointer;
+}
+
+.container .boxes .box .description span{
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.container .boxes .box .description span:hover{
+    cursor: pointer;
+}
+
+@media(max-width: 580px){
+    .container .boxes{        
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+    }
+    
+    .container .boxes .box {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,118 @@
+/* NAV */
+.container {
+   margin-top: 30px;
+}
+
+.container .navItems{
+   display: flex;
+   border-bottom: 1px solid var(--line);
+}
+
+.container .navItems .item{
+   margin-right: 40px;
+}
+
+.container .navItems .item h2{
+   padding: 10px 8px;
+   font-size: 16px;
+   font-weight: 100;
+   border-bottom: 1px solid var(--line);
+   color: var(--primary);
+   margin: 0;
+}
+
+.container .navItems .item h2:hover{
+   color: var(--blue);
+   border-bottom: 1px solid var(--blue);
+   cursor: pointer;
+}
+/* END */
+
+.container .top {
+   display: flex;
+   margin-top: 30px;
+   background-color: #e6efff;
+   padding: 17px 30px 17px 30px;
+   border-radius: 10px 10px 0 0;
+}
+
+.container .top h4{
+   font-size: 13px;
+   font-weight: 600;
+   margin-right: 30px;
+   width: 120px;
+   color: var(--dark);
+}
+
+.container .desc {
+   display: flex;
+   padding: 17px 30px;
+   font-size: 14px;
+   background-color: var(--light);
+   border-bottom: 1px solid var(--line);
+}
+
+.container .desc .box2 p{
+   font-weight: 100;
+   padding-left: 0;
+}
+
+.container .desc .box1{
+   min-width: 120px;
+   margin-right: 30px;
+   padding-top: 2px;
+}
+
+.container .desc .box{
+   min-width: 120px;
+   margin-right: 30px;
+   padding-top: 5px;
+   color: var(--lighter);
+}
+
+.container .desc .box h3{
+   font-weight: 100;
+   color: var(--blue);
+   font-size: 14px;
+}
+
+.container .desc .box span{
+   color: var(--primary);
+}
+
+.container .desc .box1 button{
+   color: var(--light);
+   background-color: var(--blue);
+   padding: 4px 25px;
+   border: none;
+   font-size: 12px;
+   border-radius: 3px;
+}
+
+@media(max-width: 750px){
+   .container .desc {
+      display: grid;
+   }
+
+   .container .section .actions {
+      margin-top: 40px;
+   }
+   .container .top {
+      display: none;
+   }
+
+   .container .desc .box, .box1{
+      margin-bottom: 5px;
+      width: 120px;
+   }
+
+   .container .navItems{
+      text-align: center;
+      display: unset;
+      border-bottom: none;
+   }
+   .container .navItems .item{
+      margin: 0;
+   }
+}
+  
